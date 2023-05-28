@@ -203,6 +203,7 @@ footer{
 @media(max-width: 768px){
     .footer-navigation{
         display: block;
+        align-items: center;
     }
 
     nav{
@@ -277,6 +278,7 @@ footer{
     
 }
 
+
 .galery-container{
     background-image: url('./Galery/sinal.jpg');  
     background-repeat: no-repeat;
@@ -288,6 +290,7 @@ footer{
     display: flex; /*dita que os filhos devem ficar centralizados na vertical*/
     flex-direction: column;
     align-items: center;
+    flex-wrap: wrap;
     
    
 }
@@ -329,6 +332,7 @@ footer{
 /*Página de contato
  */
 div.formulario-container{
+    margin-left: 50px;
     display: flex;
     justify-content: center;
     width: 90vw;
@@ -336,16 +340,39 @@ div.formulario-container{
     
 }
 
+@media(max-width: 480px) {
+    div.formulario-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+
+    }
+
+    div.formulario-container div#imgFormulario{
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    div.formulario-container{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
 div#imgFormulario{
     margin-top: 20px;
-    width: 50%;
-    height: 80%;
+    width: 500px;
+    height: 500px;
+    min-width: 500px;
     display: flex;
     flex-direction: column;
     background-color: #A60506;
     background-image: url('./Galery/letter-removebg-preview.png');
     background-repeat: no-repeat;
-    background-position: 80% 100%; /*0 é topo/esquerda e 100 e fundo/direita*/
+    background-position: 50% 100%; /*0 é topo/esquerda e 100 e fundo/direita*/
     background-size: contain;
     border-radius: 5px;
     
