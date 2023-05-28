@@ -27,34 +27,34 @@
             </ul>
         </nav>
     </header>  
-    <div class="contato">  
-        <aside>     
-            <section>
-                <form id="dados" action="./comentarios.html">
-                    <div>
-                        <label>Email</label>
-                        <input type="email" placeholder="Digite seu email" required>
-                    </div>
-                    <div>
-                        <label>Telefone de contato</label>
-                        <input type="number" placeholder="Telefone de contato" required></input>
-                    </div>
-                    <div>
-                        <label>Fan do Batman?
-                            <input id="fan" type="checkbox" required></input>
-                        </label>
-                    </div>
-                    <div>
-                        <label>Mensagem</label>
-                        <textarea rows="10" required></textarea>
-                    </div>
-                    <div>
-                        <input class="botao" type="submit" value="Enviar"></input>
-                    </div>
-                </form>
-            </section>  
-        </aside>       
+
+    <div class="formulario-container">
+        <div id="imgFormulario"></div>
+        <form id="formulario">
+            <div class="organiza">
+                <label for="emailfan">Email</label>
+                <input type="email" id="emailfan" name="emailfan" placeholder="Seu melhor email" checked>
+            </div>
+
+            <div class="organiza">
+                <label for="telnum">Telefone</label>
+                <input type="number" id="telnum" name="telnum" placeholder="Contato" checked>
+            </div>
+
+            <div class="organizaCheckBox">
+                <input type="checkbox" id="fan" name="fan">
+                <label for="fan">Fan do Batman?</label>
+            </div>
+            <div class="organiza">
+                <label for="msgfan">Mensagem</label>
+                <textarea id="msgfan" name="message" rows="10" cols="50" placeholder=" Escreva sua mensagem"></textarea>
+            </div>
+            <div class="organizaBotao">
+                <input type="button" value="Enviar"/>
+            </div>
+        </form>
     </div>
+    
 
     <footer>
         <img style="object-fit: contain;" id="logo" src="./logo.jpg"/>
